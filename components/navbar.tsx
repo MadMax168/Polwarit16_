@@ -29,16 +29,16 @@ export function NavBar() {
         <nav className="w-screen p-4 flex item-center justify-between">
             {/* Logo Left-Side */}
             <div>
-                <Card className="h-32 w-32">
+                <Card className="h-25 w-25 bg-white/3 border-white/10">
                     
                 </Card>
             </div>
             {/* Menu-Bar Right-Side */}
             <div>
-                <Card className="h-32 w-[600px]">
+                <Card className="flex items-center gap-5 h-25 p-5 bg-white/3 border-white/10">
                     {items.map((item) => (
-                        <Card key={item.title}>
-                            <a href={item.url}>
+                        <Card key={item.title} className="h-20 w-20 bg-white/12 border-white/15">
+                            <a href={item.url} className="w-20 h-20 flex justify-center items-center">
                                 <item.icon />
                             </a>
                         </Card> 
